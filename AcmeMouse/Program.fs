@@ -1,4 +1,5 @@
-﻿open ApplicationContext
+﻿module Main
+open ApplicationContext
 #if DEBUG
 open MouseHandler
 #endif
@@ -15,8 +16,12 @@ let main argv =
     mouseEvent.Publish.Subscribe (fun (str: string) -> System.Console.WriteLine str) |> ignore
  #endif
 
-    use context = new AcmeMouseContext ()
+    let t = new TrackballScroll.TrackballScroll ()
 
-    System.Windows.Forms.Application.Run (context)
+    //use context = new AcmeMouseContext ()
+
+    //System.Windows.Forms.Application.Run (context)
+
+    System.Windows.Forms.Application.Run ()
 
     0 // return an integer exit code

@@ -27,6 +27,7 @@ type WM =
     | MBUTTONUP = 0x208u
     | MOUSEWHEEL = 0x20Au
     | MOUSEHWHEEL = 0x20Eu
+    | MOUSEMOVE = 0x0200u
 
 type KEYEVENTF =
     | NONE = 0x0000
@@ -330,6 +331,21 @@ type VK =
 (*
  * 0xFF : reserved
  *)
+
+
+ type MOUSEEVENT =
+    | ABSOLUTE = 0x8000
+    | MOVE = 0x0001
+    | LEFTDOWN = 0x0002
+    | LEFTUP = 0x0002
+    | MIDDLEDOWN = 0x0020
+    | MIDDLEUP = 0x0040
+    | RIGHTDOWN = 0x0008
+    | RIGHTUP = 0x0010
+    | XDOWN = 0x0080
+    | XUP = 0x0100
+    | WHEEL = 0x0800
+    | HWHEEL = 0x01000
 
 
 

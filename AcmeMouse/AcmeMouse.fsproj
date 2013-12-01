@@ -61,9 +61,10 @@
   <ItemGroup>
     <Compile Include="WinApi.Types.fs" />
     <Compile Include="WinApi.Methods.fs" />
-    <Compile Include="Action.SendKeys.fs" />
+    <Compile Include="Actions.fs" />
     <Compile Include="MouseHook.fs" />
     <Compile Include="MouseChord.fs" />
+    <Compile Include="TrackballScroll.fs" />
     <Compile Include="ApplicationContext.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />

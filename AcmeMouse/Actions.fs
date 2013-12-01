@@ -20,3 +20,6 @@ let SendKeys (keys: List<VK>) pos =
             keybd_event (key, MapVirtualKey(key, 0u), KEYEVENTF.KEYUP, 0n)
         
         ()
+
+let SendMouse flags dx dy data =
+    mouse_event (flags, dx, dy, data, 0n)

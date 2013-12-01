@@ -105,3 +105,6 @@ extern int GetWindowText(HWND hWnd, [<Out>]System.Text.StringBuilder lpString, i
   
  [<DllImport("user32.dll", SetLastError = true)>]
  extern void keybd_event(VK bVk, uint32 bScan, KEYEVENTF dwFlags, nativeint dwExtraInfo)
+
+ [<DllImport("user32.dll", SetLastError = true)>]
+ extern void mouse_event(MOUSEEVENT dwFlags, DWORD dx, DWORD dy, DWORD dwData, nativeint dwExtraInfo)
