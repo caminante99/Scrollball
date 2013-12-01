@@ -16,12 +16,8 @@ let main argv =
     mouseEvent.Publish.Subscribe (fun (str: string) -> System.Console.WriteLine str) |> ignore
  #endif
 
-    let t = new TrackballScroll.TrackballScroll ()
 
-    //use context = new AcmeMouseContext ()
-
-    //System.Windows.Forms.Application.Run (context)
-
-    System.Windows.Forms.Application.Run ()
+    use context = new ScrollBallContext ()
+    System.Windows.Forms.Application.Run (context)
 
     0 // return an integer exit code
