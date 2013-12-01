@@ -3,6 +3,9 @@
 # ILMerge cannot be redistributed
 ILMerge/*
 
+# Ignore MonoDevelop user preferences
+*.userprefs
+
 
 ## The resit is via https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
