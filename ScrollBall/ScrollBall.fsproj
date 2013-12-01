@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>dd5841f9-31ea-449a-98a9-a3caa4b8a3a8</ProjectGuid>
+    <ProjectGuid>8F1DF30D-563D-42D3-9054-A30E965C7146</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AcmeMouse</RootNamespace>
-    <AssemblyName>AcmeMouse</AssemblyName>
+    <RootNamespace>ScrollBall</RootNamespace>
+    <AssemblyName>ScrollBall</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>AcmeMouse</Name>
+    <Name>ScrollBall</Name>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <NoWin32Manifest>False</NoWin32Manifest>
@@ -30,7 +30,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <DocumentationFile>bin\Debug\AcmeMouse.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\ScrollBall.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,7 +40,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\AcmeMouse.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\ScrollBall.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>

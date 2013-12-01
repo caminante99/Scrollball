@@ -1,16 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AcmeMouse", "AcmeMouse\AcmeMouse.fsproj", "{DD5841F9-31EA-449A-98A9-A3CAA4B8A3A8}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ScrollBall", "ScrollBall\ScrollBall.fsproj", "{8F1DF30D-563D-42D3-9054-A30E965C7146}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EC47F0A1-5DD3-4B29-9826-D7FCE28657DF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F0FD5BBA-E45F-4065-B934-EB553E528BC0}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ILMerge", "ILMerge", "{6573E2BC-28B6-4CB5-A5CF-2C5912287097}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ILMerge", "ILMerge", "{308DB94C-9577-4481-A897-95FE9DFBD1DF}"
 	ProjectSection(SolutionItems) = preProject
 		ILMerge\How to get ILMerge.txt = ILMerge\How to get ILMerge.txt
 	EndProjectSection
@@ -21,10 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DD5841F9-31EA-449A-98A9-A3CAA4B8A3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD5841F9-31EA-449A-98A9-A3CAA4B8A3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD5841F9-31EA-449A-98A9-A3CAA4B8A3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD5841F9-31EA-449A-98A9-A3CAA4B8A3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1DF30D-563D-42D3-9054-A30E965C7146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1DF30D-563D-42D3-9054-A30E965C7146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1DF30D-563D-42D3-9054-A30E965C7146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1DF30D-563D-42D3-9054-A30E965C7146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
