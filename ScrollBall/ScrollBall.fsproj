@@ -68,7 +68,7 @@
     <Compile Include="ApplicationContext.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
-    <None Include="THANKS" />
+    <None Include="CREDITS" />
     <None Include="LICENSE" />
     <EmbeddedResource Include="Resources.resx" />
     <None Include="README.md" />
