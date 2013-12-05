@@ -20,7 +20,18 @@ type ScrollBallContext() =
     let resources = new ResourceManager("Resources",Assembly.GetExecutingAssembly ())
     let components = new System.ComponentModel.Container ()
     let trayIcon = new NotifyIcon (components)
-    let hook = new TrackballScroll ()
+    let mutable hook = new TrackballScroll ()
+
+    let toggleHook = fun (sender:obj) e ->
+        // why do I need to specify sender is an obj? Shouldn't that have been inferred?
+        // ideally it would be a MenuItem but I can't convince fsharp to downcast implicitly
+        let menuItem = sender :?> MenuItem
+        if menuItem.Checked then
+            (hook :> System.IDisposable).Dispose ()
+            menuItem.Checked <- false
+        else
+            hook <- new TrackballScroll ()
+            menuItem.Checked <- true
 
     let showHelp = fun sender e -> MessageBox.Show(([ "Hold down the right mouse button and move"
                                                       "the pointer to scroll"
@@ -35,6 +46,7 @@ type ScrollBallContext() =
         trayIcon.Icon <- resources.GetObject "AppIcon" :?> System.Drawing.Icon
         trayIcon.Text <- "ScrollBall"
         trayIcon.ContextMenu <- new ContextMenu([|
+                                                menuItem "&Enabled" toggleHook (Some(fun item -> item.Checked <- true));
                                                 menuItem "&Help" showHelp None;
                                                 menuItem "E&xit" (fun s e -> Application.Exit ()) None;
                                                 |])
