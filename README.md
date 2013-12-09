@@ -25,3 +25,8 @@ the right mouse button is pressed, it cancels the input and waits to see if you 
 or release the button. If you move the mouse the movement is canceled and mousewheel events
 are sent instead. If you release the button without moving a full right mouse button press is
 sent (down and up).
+
+License
+-------
+
+MIT
