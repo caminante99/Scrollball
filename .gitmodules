@@ -1,0 +1,3 @@
+[submodule "HIDManip"]
+	path = HIDManip
+	url = https://github.com/lionicsheriff/HIDManip.git
