@@ -1,7 +1,7 @@
 ﻿module Main
 open ApplicationContext
 #if DEBUG
-open MouseHandler
+open HIDManip.Mouse.Hook
 #endif
 
 [<EntryPoint; System.STAThread>]
