@@ -4,6 +4,8 @@ open HIDManip.Mouse
 open HIDManip.Mouse.Hook
 open HIDManip.Mouse.Send
 
+open HIDManip.WinApi
+
 
 type TrackballScroll () =
     let mutable scrolling = false
