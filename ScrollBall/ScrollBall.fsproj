@@ -20,7 +20,7 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <ApplicationIcon>..\..\..\..\Downloads\1381066945_59059.ico</ApplicationIcon>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
+    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -72,10 +72,6 @@
   <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <ItemGroup>
-    <Compile Include="WinApi.Types.fs" />
-    <Compile Include="WinApi.Methods.fs" />
-    <Compile Include="Actions.fs" />
-    <Compile Include="MouseHook.fs" />
     <Compile Include="TrackballScroll.fs" />
     <Compile Include="ApplicationContext.fs" />
     <Compile Include="Program.fs" />
@@ -95,6 +91,13 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HIDManip\HIDManip\HIDManip.fsproj">
+      <Name>HIDManip</Name>
+      <Project>{be7bc78a-22d2-4eaf-8d7a-5ac1a720204b}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>if $(ConfigurationName) == Release (

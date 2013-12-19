@@ -1,9 +1,9 @@
 ﻿module TrackballScroll
 
-open MouseHandler
-open WinApi.Types
-open WinApi.Methods
-open Actions
+open HIDManip.Mouse
+open HIDManip.Mouse.Hook
+open HIDManip.Mouse.Send
+
 
 type TrackballScroll () =
     let mutable scrolling = false
